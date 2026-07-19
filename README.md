@@ -35,11 +35,12 @@ A Chrome extension that allows you to preview links in a central modal popup usi
 Since this extension is optimized for local performance, you can run it directly via Chrome's Developer Mode:
 
 1. **[Download](https://github.com/Aiuces/chrome-wheel-quick-look/releases)** or clone this repository to your local machine.
-2. Open Google Chrome and navigate to `chrome://extensions/`.
-3. Enable **Developer mode** by toggling the switch in the top-right corner.
-4. Click **Load unpacked** in the top-left corner.
-5. Select the root folder containing `manifest.json`.
-6. Pin **Wheel Quick Look** to your toolbar and enjoy!
+2. **Extract (Unzip)** the downloaded `.zip` file into a permanent folder on your local machine (e.g., your Documents folder). *Do not delete this folder afterwards, as Chrome reads the extension files directly from here.*
+3. Open Google Chrome and navigate to `chrome://extensions/` by typing it into the address bar.
+4. Enable **Developer mode** by toggling the switch in the top-right corner of the Extensions page.
+5. Click the **Load unpacked** button located in the top-left corner.
+6. Select the extracted folder. ⚠️ **Important:** Make sure to select the root directory that directly contains the `manifest.json` file (if it's doubly nested, open the folder and select the inner one).
+7. Pin **Wheel Quick Look** to your browser toolbar for quick access and enjoy!
 
 > 🔄 **Important Note for Code Modifications:**  
 > If you make any changes to the source code (e.g., modifying `content.js`), you **must reload the extension** on the `chrome://extensions/` page **AND completely refresh your active webpage tabs** for the updates to take effect.
