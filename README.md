@@ -1,14 +1,15 @@
-# Wheel Quick Look ☁️
+<p align="center">
+  <img src="icon.png" width="100" height="100" alt="Wheel Quick Look Logo" />
+</p>
+<h1 align="center">Wheel Quick Look ☁️</h1>
 
-A Chrome extension that allows you to preview links in a central modal popup using a mouse wheel long-press, eliminating unnecessary tab clutter.
+<p align="center">
+  A Chrome extension that allows you to preview links in a central modal popup using a mouse wheel long-press, eliminating unnecessary tab clutter.
+</p>
 
-![Version](https://img.shields.io/badge/version-1.2-a2d2ff?style=flat-square&logo=github)
-![Manifest](https://img.shields.io/badge/manifest-v3-e6e0d8?style=flat-square&logo=googlechrome)
-![License](https://img.shields.io/badge/license-Custom-ffb3c1?style=flat-square&logo=opensourceinitiative)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Discord](https://img.shields.io/badge/Discord-hj.hive-5865F2?style=flat-square&logo=discord&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.2-a2d2ff?style=flat-square&logo=github" alt="Version" /> <img src="https://img.shields.io/badge/manifest-v3-e6e0d8?style=flat-square&logo=googlechrome" alt="Manifest" /> <img src="https://img.shields.io/badge/license-Custom-ffb3c1?style=flat-square&logo=opensourceinitiative" alt="License" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" /> <img src="https://img.shields.io/badge/Discord-hj.hive-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
+</p>
 
 <p align="center">
   <img src="assets/loading.png" width="48%" alt="Loading State" />
