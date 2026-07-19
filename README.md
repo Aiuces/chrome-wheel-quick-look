@@ -12,6 +12,10 @@
 </p>
 
 <p align="center">
+   English | <a href="./README.ko.md">한국어</a>
+</p>
+
+<p align="center">
   <img src="assets/loading.png" width="48%" alt="Loading State" />
   <img src="assets/preview.png" width="48%" alt="Preview Opened" />
 </p>
