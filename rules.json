@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        { "header": "disabled-x-frame-options", "operation": "remove" },
+        { "header": "disabled-content-security-policy", "operation": "remove" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*qlook_preview=true*",
+      "resourceTypes": ["sub_frame"]
+    }
+  }
+]

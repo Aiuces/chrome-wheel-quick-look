@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 220px;
+      background-color: #fffbf0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 15px;
+      color: #6c584c;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .version {
+      font-size: 11px;
+      opacity: 0.6;
+      margin-top: 1px;
+    }
+    .character-box {
+      position: relative; /* Reference point for GitHub icon positioning */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px 0 10px 0;
+    }
+    .mini-cloud {
+      width: 50px;
+      height: 28px;
+      background: #a2d2ff;
+      border-radius: 20px;
+      position: relative;
+      animation: floatCloud 1.6s infinite ease-in-out;
+    }
+    .mini-cloud::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      background: #a2d2ff;
+      border-radius: 50%;
+      top: -13px;
+      left: 9px;
+    }
+    .mini-cloud::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #a2d2ff;
+      border-radius: 50%;
+      top: -8px;
+      right: 7px;
+    }
+    .eye {
+      width: 4px;
+      height: 4px;
+      background: #2b2b2b;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      z-index: 5;
+    }
+    .eye.left { left: 15px; }
+    .eye.right { right: 15px; }
+    .mouth {
+      width: 6px;
+      height: 3px;
+      border: 1.5px solid #2b2b2b;
+      border-top: none;
+      border-radius: 0 0 6px 6px;
+      position: absolute;
+      top: 14px;
+      left: 22px;
+      z-index: 5;
+    }
+    .mini-shadow {
+      width: 32px;
+      height: 4px;
+      background: rgba(0, 0, 0, 0.08);
+      border-radius: 50%;
+      margin-top: 12px;
+      animation: shadowScale 1.6s infinite ease-in-out;
+    }
+    
+    /* GitHub link styling */
+    .github-link {
+      position: absolute;
+      right: 10px;
+      top: 4px;
+      color: #6c584c;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .github-link:hover {
+      color: #70b5ff;
+      transform: scale(1.18) rotate(10deg);
+    }
+
+    @keyframes floatCloud {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes shadowScale {
+      0%, 100% { transform: scaleX(1); opacity: 0.8; }
+      50% { transform: scaleX(0.7); opacity: 0.3; }
+    }
+    .control-group {
+      margin-top: 12px;
+    }
+    label {
+      font-size: 11px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    /* Custom dropdown styling */
+    select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px 30px 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #dcd6cd;
+      background-color: #ffffff;
+      color: #6c584c;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%236c584c' d='M2.5 4.5l3.5 3.5 3.5-3.5z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    select:hover, select:focus {
+      border-color: #a2d2ff;
+      box-shadow: 0 0 0 2px rgba(162, 210, 255, 0.25);
+    }
+    
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    
+    /* Custom slider styling */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      flex: 1;
+      height: 6px;
+      background: #e6e0d8;
+      border-radius: 3px;
+      outline: none;
+      margin: 0;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #a2d2ff;
+      cursor: pointer;
+      border: 2px solid #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      transition: transform 0.1s ease, background 0.1s ease;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover {
+      background: #70b5ff;
+      transform: scale(1.15);
+    }
+    .slider-value {
+      font-size: 11px;
+      font-weight: bold;
+      min-width: 28px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">Wheel Quick Look</div>
+    <div class="version">Version 1.2</div>
+  </div>
+  
+  <div class="character-box">
+    <div class="mini-cloud">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="mini-shadow"></div>
+    
+    <!-- GitHub repository link -->
+    <a href="https://github.com/Aiuces/chrome-wheel-quick-look" target="_blank" class="github-link" title="Visit GitHub Repository">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"></path>
+      </svg>
+    </a>
+  </div>
+
+  <div class="control-group">
+    <label for="behavior">Click Action inside Popup</label>
+    <select id="behavior">
+      <option value="newTab">Open in New Tab</option>
+      <option value="currentTab">Open in Current Tab</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label for="duration">Long-Press Timer</label>
+    <div class="slider-container">
+      <input type="range" id="duration" min="200" max="2000" step="100" value="700">
+      <span class="slider-value" id="duration-value">0.7s</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
