@@ -34,7 +34,7 @@ A Chrome extension that allows you to preview links in a central modal popup usi
 
 Since this extension is optimized for local performance, you can run it directly via Chrome's Developer Mode:
 
-1. **Download** or clone this repository to your local machine.
+1. **[Download](https://github.com/Aiuces/chrome-wheel-quick-look/releases)** or clone this repository to your local machine.
 2. Open Google Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** by toggling the switch in the top-right corner.
 4. Click **Load unpacked** in the top-left corner.
