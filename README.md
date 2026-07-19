@@ -10,6 +10,11 @@ A Chrome extension that allows you to preview links in a central modal popup usi
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Discord](https://img.shields.io/badge/Discord-hj.hive-5865F2?style=flat-square&logo=discord&logoColor=white)
 
+<p align="center">
+  <img src="assets/loading.png" width="48%" alt="Loading State" />
+  <img src="assets/preview.png" width="48%" alt="Preview Opened" />
+</p>
+
 ---
 
 ## ✨ Features
@@ -42,6 +47,10 @@ Since this extension is optimized for local performance, you can run it directly
 ---
 
 ## ⚙️ Configuration
+
+<p align="center">
+  <img src="assets/config.png" width="35%" alt="Control Panel" />
+</p>
 
 Click the extension icon in your toolbar to access the control panel:
 * **Click Action inside Popup**: Toggle whether to open nested previews into a new tab or redirect the current view.
