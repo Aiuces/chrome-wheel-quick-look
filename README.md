@@ -26,7 +26,7 @@
 
 * **Instant Preview**: Long-press the mouse wheel (middle click) on any link to trigger a central preview popup.
 * **Advanced Auto-Scroll**: Middle-click inside the popup to activate a smooth auto-scroll mode, complete with a polished glassmorphism crosshair UI and a clean, modern full-page loader.
-* **Smart Navigation**: Click links inside the preview popup to seamlessly open them in a new tab or redirect the current window, based on your preferences.
+* **Smart Navigation**: Click inside the preview popup to seamlessly open them in a new tab or redirect the current window, based on your preferences.
 * **Scroll Restoration**: The extension automatically memorizes your exact vertical/horizontal scroll coordinates and flawlessly restores your view on the destination page.
 * **Anti-Focus Stealing**: Built-in state trapping to isolate intrusive advertisements and protect user interaction layout.
 * **Instant Close Shortcuts**: Dismiss the preview modal instantly by pressing the `Escape` key, clicking the dim backdrop overlay, or simply clicking your mouse back button (Button 3).
