@@ -71,7 +71,7 @@ By default, certain advanced network rules in `rules.json` are prefixed with `di
 * **Why they are disabled by default**: Unconditionally stripping web security headers can expose users to security risks (such as clickjacking).
 * **What happens**: Because these rules are kept off out-of-the-box, websites with strict anti-framing policies will block themselves from being loaded inside the preview popup, resulting in a "Connection Refused" error.
 * **How to use**: If specific websites fail to load properly, you can remove the `disabled-` prefix from one or both rules to bypass their framing restrictions.
-* **Security Warning**: Un-disabling (enabling) these rules will force the removal of strict security headers (`Content-Security-Policy` and `X-Frame-Options`) within the preview context. While this improves website compatibility, it **may expose the preview sandbox to potential security vulnerabilities** on untrusted sites. Please use with caution.
+* **Security Warning**: Un-disabling (enabling) these rules will force the removal of strict security headers (`Content-Security-Policy` and `X-Frame-Options`) within the preview context. While this improves website compatibility, it <strong>may expose the preview sandbox to potential security vulnerabilities</strong> on untrusted sites. Please use with caution.
 
 ---
 
