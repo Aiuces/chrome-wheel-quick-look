@@ -2,9 +2,12 @@
 
 A Chrome extension that allows you to preview links in a central modal popup using a mouse wheel long-press, eliminating unnecessary tab clutter.
 
-![Version](https://img.shields.io/badge/version-1.2-a2d2ff?style=flat-square)
-![Manifest](https://img.shields.io/badge/manifest-v3-e6e0d8?style=flat-square)
-![License](https://img.shields.io/badge/license-Custom-ffb3c1?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.2-a2d2ff?style=flat-square&logo=github)
+![Manifest](https://img.shields.io/badge/manifest-v3-e6e0d8?style=flat-square&logo=googlechrome)
+![License](https://img.shields.io/badge/license-Custom-ffb3c1?style=flat-square&logo=opensourceinitiative)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
 ---
 
@@ -18,8 +21,6 @@ A Chrome extension that allows you to preview links in a central modal popup usi
 * **Instant Close Shortcuts**: Dismiss the preview modal instantly by pressing the `Escape` key, clicking the dim backdrop overlay, or simply clicking your mouse back button (Button 3).
 * **Fully Customizable**: Tweak long-press thresholds (200ms - 2000ms) and window click behaviors via a beautifully tailored extension control panel.
 * **Serverless & Secure**: All configurations are securely stored inside your local machine using `chrome.storage.local`.
-
-
 
 ---
 
