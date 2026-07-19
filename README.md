@@ -18,7 +18,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 * **Instant Preview**: Long-press the mouse wheel (middle click) on any link to trigger a central preview popup.
 * **Advanced Auto-Scroll**: Middle-click inside the popup to activate a smooth auto-scroll mode, complete with a polished glassmorphism crosshair UI and a clean, modern full-page loader.
@@ -31,7 +31,7 @@
 
 ---
 
-## 🛠️ Installation (Developer Mode)
+## Installation (Developer Mode)
 
 Since this extension is optimized for local performance, you can run it directly via Chrome's Developer Mode:
 
@@ -40,15 +40,15 @@ Since this extension is optimized for local performance, you can run it directly
 3. Open Google Chrome and navigate to `chrome://extensions/` by typing it into the address bar.
 4. Enable **Developer mode** by toggling the switch in the top-right corner of the Extensions page.
 5. Click the **Load unpacked** button located in the top-left corner.
-6. Select the extracted folder. ⚠️ **Important:** Make sure to select the root directory that directly contains the `manifest.json` file (if it's doubly nested, open the folder and select the inner one).
+6. Select the extracted folder. **Important:** Make sure to select the root directory that directly contains the `manifest.json` file (if it's doubly nested, open the folder and select the inner one).
 7. Pin **Wheel Quick Look** to your browser toolbar for quick access and enjoy!
 
-> 🔄 **Important Note for Code Modifications:**  
+> **Important Note for Code Modifications:**  
 > If you make any changes to the source code (e.g., modifying `content.js`), you **must reload the extension** on the `chrome://extensions/` page **AND completely refresh your active webpage tabs** for the updates to take effect.
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 <p align="center">
   <img src="assets/config.png" width="35%" alt="Control Panel" />
@@ -60,17 +60,17 @@ Click the extension icon in your toolbar to access the control panel:
 
 ---
 
-## 🔒 Advanced: Security & Compatibility (rules.json)
+## Advanced: Security & Compatibility (rules.json)
 
 By default, certain advanced network rules in `rules.json` are prefixed with `disabled-` (e.g., `disabled-content-security-policy`). 
 
 * **Why they are disabled**: Some strict websites actively block themselves from being loaded inside an iframe, which may cause a "Connection Refused" error in the preview popup.
 * **How to use**: If specific websites fail to load properly, you can remove the `disabled-` prefix from one or both rules to bypass their framing restrictions.
-* ⚠️ **Security Warning**: Un-disabling (enabling) these rules will force the removal of strict security headers (`Content-Security-Policy` and `X-Frame-Options`) within the preview context. While this significantly improves website compatibility, it **may expose the preview sandbox to potential security vulnerabilities** on untrusted sites. Please use with caution.
+* **Security Warning**: Un-disabling (enabling) these rules will force the removal of strict security headers (`Content-Security-Policy` and `X-Frame-Options`) within the preview context. While this significantly improves website compatibility, it **may expose the preview sandbox to potential security vulnerabilities** on untrusted sites. Please use with caution.
 
 ---
 
-## 📄 License
+## License
 
 Copyright (c) 2026 Aiuces. All rights reserved.  
 
