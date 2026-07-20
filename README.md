@@ -37,7 +37,7 @@
 
 ## Installation (Developer Mode)
 
-Since this extension is optimized for local performance, you can run it directly via Chrome's Developer Mode:
+Since this extension is optimized for local environment, you can run it directly via Chrome's Developer Mode:
 
 1. **[Download](https://github.com/Aiuces/chrome-wheel-quick-look/releases)** or clone this repository to your local machine.
 2. **Extract (Unzip)** the downloaded `.zip` file into a permanent folder on your local machine (e.g., your Documents folder). *Do not delete this folder afterwards, as Chrome reads the extension files directly from here.*
